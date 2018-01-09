@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+nav{
+	position: fixed;
+	/*USA-SE O z-index COMO SE FOSSE UMA PROFUNDIDADE DA PAGINA, DE -100 A 100 SENDO 
+	EXEMPLO: TENHO UMA img z-index: -1; E UMA nav z-index: 0; O nav ESTARA NA FRENTE DA IMG */
+	z-index: 0;
+	width: 100%;
+	height: 75px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+nav ul{
+	/*USA-SE float PARA FAZER COM QUE ITENS QUE FICARIAM UM EM BAIXO DO OUTRO POSSAM FICAR LADO A LADO*/
+	float: right;
+	margin-right: 130px;
+	margin-top: 27px;
+}
+nav ul li{
+	float: left;
+	list-style-type: none;
+	margin-left: 19px;
+	margin-right:10px;
+	font-size: 15px;
+	color: white;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+/*QUANDO USAMOS O hover ESTAMOS DIZENDO QUE QUANDO PASSARMOS O MOUSE EM CIMA DO ITEM 
+ELE MUDARA DE COR, SENDO QUE DE BRANCO NESSE CASO IRA PARA VERDE*/
+nav ul li a:hover{
+color: #1ed760; 
+}
+/*A DIFERENÇA DE margin PARA padding É QUE margin VAI DE FORA PARA DENTRO E padding É DE DENTRO PARA FORA*/
+header{
+ 	padding-top: 254px;
+ 	padding-left: 372px;
+ 	background-image: url(../img/bkg1.jpg);
+ 	background-size: 100%;
+ 	padding-bottom: 185px;
+ 	background-repeat: no-repeat;
+ 	z-index: -1;
+
+}
+.guia{
+	width: 100%;
+	opacity: 0.5;
+	z-index: 0;
+	position: absolute;
+}
+.logo{
+	width: 125px;
+	margin-left: 142px;
+	margin-top: 18px;
+}
+.slogan{
+	color: white;
+	font-size: 67px;
+	margin-bottom: 50px;
+}
+.btn{
+	/*USA-SE border-radius PARA DEIXAR A BORDA DO BOTÃO ARRENDODADA */
+	border-radius: 60px;
+	height: 46px;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+}
+.btn-verde{
+	background-color: #1ed760;
+	margin-right: 10px;
+	width: 315px;
+	border: 0;
+}
+.btn-branco{
+	background-color: rgba(0, 0, 0, 0);
+	width: 297px;
+	border: 1px solid white;
+}
+.btn-branco:hover{
+	background-color: white;
+	color: black;
+}
+.guia2{
+	width: 100%;
+	opacity: 0.5;
+	z-index: 0;
+	position: absolute;
+}
+.paragrafo{
+	padding-left: 140px;
+	padding-top: 55px;
+}
